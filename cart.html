@@ -1,50 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Shopping Cart</title>
- <link rel="icon" type="image/png" href="./images/icon.png">
-  <link rel="stylsheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify | Shopping Cart</title>
+    <link rel="icon" type="image/png" href="./images/icon.png">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>Shopping Cart</h1>
+    <!-- Header -->
+    <header>
 
-<a href="index.html">Home</a> |
-<a href="products.html">Products</a> |
-<a href="cart.html">Cart</a> |
-<a href="about.html">About</a> |
-<a href="contact.html">Contact</a>
+        <h1>SHOPIFY</h1>
 
-<hr>
+        <p>Complete Your Purchase</p>
 
-<form>
+    </header>
 
-<fieldset>
+    <!-- Navigation -->
+    <nav>
 
-<legend>Checkout Form</legend>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="cart.html">Cart</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
 
-<label>Full Name</label><br>
-<input type="text"><br><br>
+    </nav>
 
-<label>Email</label><br>
-<input type="email"><br><br>
+    <main>
 
-<label>Delivery Address</label><br>
-<textarea rows="5" cols="30"></textarea><br><br>
+        <!-- Shopping Cart Information -->
+        <section class="info-card">
 
-<label>Payment Method</label><br>
+            <h2>Your Shopping Cart</h2>
 
-<input type="radio" name="pay"> M-Pesa<br>
-<input type="radio" name="pay"> Debit Card<br>
-<input type="radio" name="pay"> Cash on Delivery<br><br>
+            <p>
+                Below is a sample shopping cart showing products selected for
+                purchase. This page demonstrates how an online checkout page
+                might look using HTML only.
+            </p>
 
-<input type="submit" value="Place Order">
-<input type="reset">
+        </section>
 
-</fieldset>
+        <!-- Cart Table -->
+        <section class="info-card">
 
-</form>
+            <h2>Items in Cart</h2>
+
+            <table>
+
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Unit Price</th>
+                    <th>Total</th>
+                </tr>
+
+                <tr>
+                    <td>iPhone 16</td>
+                    <td>1</td>
+                    <td>KSh 140,000</td>
+                    <td>KSh 140,000</td>
+                </tr>
+
+                <tr>
+                    <td>Wireless Headphones</td>
+                    <td>2</td>
+                    <td>KSh 6,500</td>
+                    <td>KSh 13,000</td>
+                </tr>
+
+                <tr>
+                    <td>Running Shoes</td>
+                    <td>1</td>
+                    <td>KSh 5,800</td>
+                    <td>KSh 5,800</td>
+                </tr>
+
+                <tr>
+                    <th colspan="3">Grand Total</th>
+                    <th>KSh 158,800</th>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <!-- Checkout Form -->
+        <section>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>Checkout Details</legend>
+
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" placeholder="Enter your full name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="+254 700 123 456" required>
+
+                    <label for="address">Delivery Address</label>
+                    <textarea id="address" rows="4" placeholder="Enter your delivery address" required></textarea>
+
+                    <label for="county">County</label>
+                    <select id="county">
+
+                        <option>Select County</option>
+                        <option>Nairobi</option>
+                        <option>Mombasa</option>
+                        <option>Kisumu</option>
+                        <option>Nakuru</option>
+                        <option>Eldoret</option>
+                        <option>Kiambu</option>
+
+                    </select>
+
+                    <label for="delivery">Delivery Date</label>
+                    <input type="date" id="delivery">
+
+                    <label>Payment Method</label>
+
+                    <input type="radio" name="payment"> M-Pesa<br><br>
+
+                    <input type="radio" name="payment"> Credit / Debit Card<br><br>
+
+                    <input type="radio" name="payment"> Cash on Delivery<br><br>
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        I agree to the Terms and Conditions.
+
+                    </label>
+
+                    <br><br>
+
+                    <input type="submit" value="Place Order">
+
+                    <input type="reset" value="Clear Form">
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+        <!-- Payment Information -->
+        <section class="info-card">
+
+            <h2>Accepted Payment Methods</h2>
+
+            <ul>
+
+                <li>M-Pesa</li>
+
+                <li>Visa Card</li>
+
+                <li>MasterCard</li>
+
+                <li>Cash on Delivery</li>
+
+            </ul>
+
+        </section>
+
+        <!-- Shopping Benefits -->
+        <section class="info-card">
+
+            <h2>Why Shop With Shopify?</h2>
+
+            <ol>
+
+                <li>Fast delivery across Kenya.</li>
+
+                <li>Secure online payments.</li>
+
+                <li>Affordable prices.</li>
+
+                <li>High-quality products.</li>
+
+                <li>Easy returns within 14 days.</li>
+
+            </ol>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p><strong>SHOPIFY</strong></p>
+
+        <p>Your Trusted Online Shopping Destination</p>
+
+        <p>Email: support@shopify.com | Phone: +254 700 123 456</p>
+
+        <p>&copy; 2026 Shopify. All Rights Reserved.</p>
+
+    </footer>
 
 </body>
+
 </html>

@@ -1,0 +1,624 @@
+/*=========================================================
+ SHOPIFY SHOPPING WEBSITE
+ style.css
+ Author: Emmanuel Okoth
+=========================================================*/
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*=========================================================
+ RESET
+=========================================================*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+/*=========================================================
+ BODY
+=========================================================*/
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8F5F2;
+    color:#3D2C1E;
+    line-height:1.6;
+}
+
+/*=========================================================
+ HEADER
+=========================================================*/
+header{
+    background:linear-gradient(135deg,#D9B99B,#C8A27A);
+    color:white;
+    text-align:center;
+    padding:35px;
+}
+
+header h1{
+    font-size:42px;
+    letter-spacing:3px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+/*=========================================================
+ FLEXBOX NAVIGATION
+=========================================================*/
+nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:15px;
+
+    background:#A67C52;
+
+    padding:15px;
+
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:6px;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    background:#F8F5F2;
+    color:#6F4E37;
+    transform:translateY(-2px);
+}
+
+/*=========================================================
+ MAIN
+=========================================================*/
+main{
+    width:90%;
+    max-width:1200px;
+    margin:35px auto;
+}
+
+/*=========================================================
+ HERO
+=========================================================*/
+.hero{
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),
+    rgba(0,0,0,.45)),
+    url("images/shopping.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    height:400px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    border-radius:12px;
+
+    border:4px solid #D9B99B;
+}
+
+.hero h2{
+
+    font-size:44px;
+}
+
+.hero p{
+
+    font-size:20px;
+    margin-top:15px;
+}
+
+/*=========================================================
+ INFO CARDS
+=========================================================*/
+.info-card{
+
+    background:white;
+
+    margin:30px 0;
+
+    padding:25px;
+
+    border-left:8px solid #C8A27A;
+
+    border-radius:12px;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.08);
+
+    animation:fadeIn .8s;
+}
+
+/*=========================================================
+ HEADINGS
+=========================================================*/
+h2{
+
+    color:#8B6B4A;
+
+    margin-bottom:15px;
+}
+
+h3{
+
+    color:#A67C52;
+
+    margin-bottom:10px;
+}
+
+/*=========================================================
+ PARAGRAPHS
+=========================================================*/
+p{
+
+    margin-bottom:12px;
+}
+
+/*=========================================================
+ LISTS
+=========================================================*/
+ul,
+ol{
+
+    margin-left:30px;
+
+    margin-top:15px;
+}
+
+li{
+
+    margin-bottom:10px;
+}
+
+/*=========================================================
+ TABLES
+=========================================================*/
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+    background:white;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+th{
+
+    background:#B08968;
+
+    color:white;
+
+    padding:15px;
+}
+
+td{
+
+    padding:15px;
+
+    text-align:center;
+}
+
+tr:nth-child(even){
+
+    background:#F3ECE6;
+}
+
+tr:hover{
+
+    background:#E9D8C9;
+}
+
+/*=========================================================
+ PRODUCT CARDS
+=========================================================*/
+.products{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+    margin-top:25px;
+}
+
+.card{
+
+    width:270px;
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.12);
+
+    transition:.4s;
+
+    animation:fadeIn .8s;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 30px rgba(176,137,104,.35);
+}
+
+.card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+}
+
+.card h3{
+
+    margin-top:15px;
+}
+
+.card p{
+
+    margin:10px;
+}
+
+.card button{
+
+    margin-bottom:20px;
+}
+
+/*=========================================================
+ BUTTONS
+=========================================================*/
+button,
+input[type="submit"],
+input[type="reset"]{
+
+    background:#B08968;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 24px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+
+    background:#8B6B4A;
+
+    transform:scale(1.05);
+}
+
+/*=========================================================
+ FORMS
+=========================================================*/
+form{
+
+    width:70%;
+
+    margin:auto;
+}
+
+fieldset{
+
+    background:white;
+
+    border:2px solid #D9B99B;
+
+    padding:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+legend{
+
+    color:#8B6B4A;
+
+    font-size:22px;
+
+    font-weight:bold;
+}
+
+label{
+
+    display:block;
+
+    margin-top:12px;
+
+    font-weight:600;
+}
+
+input,
+textarea,
+select{
+
+    width:100%;
+
+    padding:12px;
+
+    margin-top:8px;
+
+    margin-bottom:15px;
+
+    border:1px solid #C8A27A;
+
+    border-radius:6px;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:15px;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+
+    outline:none;
+
+    border:2px solid #A67C52;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+
+    width:auto;
+
+    margin-right:8px;
+}
+
+/*=========================================================
+ GALLERY
+=========================================================*/
+.gallery{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:30px;
+
+    margin-top:35px;
+}
+
+/*=========================================================
+ CSS FLIP CARDS
+=========================================================*/
+.flip-card{
+
+    width:260px;
+
+    height:330px;
+
+    perspective:1000px;
+}
+
+.flip-inner{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+    transition:transform .8s;
+
+    transform-style:preserve-3d;
+}
+
+.flip-card:hover .flip-inner{
+
+    transform:rotateY(180deg);
+}
+
+.front,
+.back{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    backface-visibility:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
+
+.front img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+}
+
+.back{
+
+    background:#A67C52;
+
+    color:white;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    transform:rotateY(180deg);
+}
+
+.back h3{
+
+    color:white;
+
+    margin-bottom:15px;
+}
+
+/*=========================================================
+ IMAGES
+=========================================================*/
+img{
+
+    max-width:100%;
+
+    display:block;
+}
+
+/*=========================================================
+ FOOTER
+=========================================================*/
+footer{
+
+    background:#6F4E37;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+    margin-top:50px;
+}
+
+footer p{
+
+    margin:6px 0;
+}
+
+/*=========================================================
+ ANIMATION
+=========================================================*/
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/*=========================================================
+ RESPONSIVE DESIGN
+=========================================================*/
+@media (max-width:900px){
+
+    nav{
+
+        flex-direction:column;
+    }
+
+    main{
+
+        width:95%;
+    }
+
+    form{
+
+        width:100%;
+    }
+
+    .products{
+
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .gallery{
+
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero{
+
+        height:280px;
+        padding:20px;
+    }
+
+    .hero h2{
+
+        font-size:30px;
+    }
+
+    .hero p{
+
+        font-size:16px;
+    }
+
+    table{
+
+        display:block;
+        overflow-x:auto;
+    }
+
+    .card,
+    .flip-card{
+
+        width:100%;
+        max-width:320px;
+    }
+}
