@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopify | Products</title>
+    <title>Shopify | Gallery</title>
      <link rel="icon" type="image/png" href="./images/icon.png">
+     <script src="./script.js" defer></script>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +18,7 @@
 
         <h1>SHOPIFY</h1>
 
-        <p>Browse Our Wide Range of Products</p>
+        <p>Explore Our Product Gallery</p>
 
     </header>
 
@@ -35,186 +36,189 @@
 
     <main>
 
-        <!-- Page Introduction -->
+        <!-- Introduction -->
         <section class="info-card">
 
-            <h2>Our Featured Products</h2>
+            <h2>Product Gallery</h2>
 
             <p>
-                Explore our collection of high-quality products carefully selected
-                to meet your everyday needs. From electronics and fashion to home
-                appliances, Shopify offers affordable prices and reliable delivery.
+                Hover over each card to view product details. Our gallery uses
+                CSS Flip Cards to create an interactive shopping experience.
             </p>
 
         </section>
 
-        <!-- Product Cards -->
-        <section class="products">
+        <!-- Gallery -->
+        <section class="gallery">
 
-            <div class="card">
+            <!-- Card 1 -->
+            <div class="flip-card">
 
-                <img src="images/iphone.jpg" alt="iPhone 16">
+                <div class="flip-inner">
 
-                <h3>iPhone 16</h3>
+                    <div class="front">
 
-                <p><strong>Category:</strong> Electronics</p>
+                        <img src="./images/iphone16.webp" alt="iPhone 16">
 
-                <p><strong>Price:</strong> KSh 140,000</p>
+                    </div>
 
-                <button>Buy Now</button>
+                    <div class="back">
 
-            </div>
+                        <h3>iPhone 16</h3>
 
-            <div class="card">
+                        <p>Latest smartphone with advanced features.</p>
 
-                <img src="images/laptop.jpg" alt="Gaming Laptop">
+                        <p><strong>KSh 140,000</strong></p>
 
-                <h3>Gaming Laptop</h3>
+                    </div>
 
-                <p><strong>Category:</strong> Electronics</p>
-
-                <p><strong>Price:</strong> KSh 95,000</p>
-
-                <button>Buy Now</button>
+                </div>
 
             </div>
 
-            <div class="card">
+            <!-- Card 2 -->
+            <div class="flip-card">
 
-                <img src="images/headphones.jpg" alt="Wireless Headphones">
+                <div class="flip-inner">
 
-                <h3>Wireless Headphones</h3>
+                    <div class="front">
 
-                <p><strong>Category:</strong> Accessories</p>
+                        <img src="./images/gaminglaptop.jpg" alt="Gaming Laptop">
 
-                <p><strong>Price:</strong> KSh 6,500</p>
+                    </div>
 
-                <button>Buy Now</button>
+                    <div class="back">
 
-            </div>
+                        <h3>Gaming Laptop</h3>
 
-            <div class="card">
+                        <p>High-performance laptop for gaming and work.</p>
 
-                <img src="images/smartwatch.jpg" alt="Smart Watch">
+                        <p><strong>KSh 95,000</strong></p>
 
-                <h3>Smart Watch</h3>
+                    </div>
 
-                <p><strong>Category:</strong> Wearables</p>
-
-                <p><strong>Price:</strong> KSh 18,500</p>
-
-                <button>Buy Now</button>
+                </div>
 
             </div>
 
-            <div class="card">
+            <!-- Card 3 -->
+            <div class="flip-card">
 
-                <img src="images/tv.jpg" alt="Smart TV">
+                <div class="flip-inner">
 
-                <h3>55-inch Smart TV</h3>
+                    <div class="front">
 
-                <p><strong>Category:</strong> Home Entertainment</p>
+                        <img src="./images/headphones.webp" alt="Headphones">
 
-                <p><strong>Price:</strong> KSh 78,000</p>
+                    </div>
 
-                <button>Buy Now</button>
+                    <div class="back">
+
+                        <h3>Wireless Headphones</h3>
+
+                        <p>Crystal clear sound with noise cancellation.</p>
+
+                        <p><strong>KSh 6,500</strong></p>
+
+                    </div>
+
+                </div>
 
             </div>
 
-            <div class="card">
+            <!-- Card 4 -->
+            <div class="flip-card">
 
-                <img src="images/shoes.jpg" alt="Running Shoes">
+                <div class="flip-inner">
 
-                <h3>Running Shoes</h3>
+                    <div class="front">
 
-                <p><strong>Category:</strong> Fashion</p>
+                        <img src="./images/smartwatch.avif" alt="Smart Watch">
 
-                <p><strong>Price:</strong> KSh 5,800</p>
+                    </div>
 
-                <button>Buy Now</button>
+                    <div class="back">
+
+                        <h3>Smart Watch</h3>
+
+                        <p>Track fitness and stay connected.</p>
+
+                        <p><strong>KSh 18,500</strong></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 5 -->
+            <div class="flip-card">
+
+                <div class="flip-inner">
+
+                    <div class="front">
+
+                        <img src="./images/smart tv.jpg" alt="Smart TV">
+
+                    </div>
+
+                    <div class="back">
+
+                        <h3>55-inch Smart TV</h3>
+
+                        <p>Enjoy ultra-HD entertainment.</p>
+
+                        <p><strong>KSh 78,000</strong></p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 6 -->
+            <div class="flip-card">
+
+                <div class="flip-inner">
+
+                    <div class="front">
+
+                        <img src="./images/sports shoes.webp" alt="Running Shoes">
+
+                    </div>
+
+                    <div class="back">
+
+                        <h3>Running Shoes</h3>
+
+                        <p>Comfortable and stylish sports footwear.</p>
+
+                        <p><strong>KSh 5,800</strong></p>
+
+                    </div>
+
+                </div>
 
             </div>
 
         </section>
 
-        <!-- Product Price Table -->
+        <!-- Extra Information -->
         <section class="info-card">
 
-            <h2>Product Price List</h2>
-
-            <table>
-
-                <tr>
-                    <th>Product</th>
-                    <th>Category</th>
-                    <th>Price (KSh)</th>
-                    <th>Availability</th>
-                </tr>
-
-                <tr>
-                    <td>iPhone 16</td>
-                    <td>Electronics</td>
-                    <td>140,000</td>
-                    <td>In Stock</td>
-                </tr>
-
-                <tr>
-                    <td>Gaming Laptop</td>
-                    <td>Electronics</td>
-                    <td>95,000</td>
-                    <td>In Stock</td>
-                </tr>
-
-                <tr>
-                    <td>Wireless Headphones</td>
-                    <td>Accessories</td>
-                    <td>6,500</td>
-                    <td>Available</td>
-                </tr>
-
-                <tr>
-                    <td>Smart Watch</td>
-                    <td>Wearables</td>
-                    <td>18,500</td>
-                    <td>Available</td>
-                </tr>
-
-                <tr>
-                    <td>55-inch Smart TV</td>
-                    <td>Home Entertainment</td>
-                    <td>78,000</td>
-                    <td>Limited Stock</td>
-                </tr>
-
-                <tr>
-                    <td>Running Shoes</td>
-                    <td>Fashion</td>
-                    <td>5,800</td>
-                    <td>In Stock</td>
-                </tr>
-
-            </table>
-
-        </section>
-
-        <!-- Why Buy From Us -->
-        <section class="info-card">
-
-            <h2>Why Buy From Shopify?</h2>
+            <h2>Why Our Gallery is Special</h2>
 
             <ul>
 
-                <li>✔ Affordable prices on all products.</li>
+                <li>Interactive CSS Flip Cards.</li>
 
-                <li>✔ Genuine and high-quality merchandise.</li>
+                <li>Hover effects for better user experience.</li>
 
-                <li>✔ Secure payment methods.</li>
+                <li>Responsive design for mobile devices.</li>
 
-                <li>✔ Fast delivery across Kenya.</li>
+                <li>High-quality product images.</li>
 
-                <li>✔ Excellent customer support.</li>
-
-                <li>✔ Easy returns and refunds.</li>
+                <li>Clean and modern layout.</li>
 
             </ul>
 
